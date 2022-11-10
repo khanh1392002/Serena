@@ -107,4 +107,37 @@ $(document).ready(function(){
             },
         ]
     });
+    $('.slider-new-wrapper').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: true,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                }
+            },
+        ]
+    });
+    $('.btn-ungtuyen').click(function(){
+        $('.overlay').fadeIn();
+        $('.application').fadeIn();
+    });
+    $('.overlay').click(function(){
+        $('.overlay').fadeOut();
+        $('.application').fadeOut();
+      });
 })
