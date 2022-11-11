@@ -86,6 +86,25 @@ body header {
         text-decoration: none; }
     body header .header-top .logo picture img {
       width: 100%; }
+    body header .header-top .btn-nav {
+      display: none;
+      position: relative;
+      margin-right: 20px; }
+      body header .header-top .btn-nav::before {
+        content: "";
+        font-family: Font-Awesome;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 28px;
+        pointer-events: none; }
+      body header .header-top .btn-nav button {
+        width: 22px;
+        height: 22px;
+        background: none;
+        border: none; }
 body .menu ul {
   display: flex;
   list-style: none;
@@ -151,6 +170,8 @@ body .menu ul {
       font-family: Montserrat-Regular, sans-serif; }
   body .menu ul .menu-dropdown {
     position: absolute; }
+body .menu-mobie {
+  display: none; }
 body .banner {
   position: relative; }
   body .banner picture {
@@ -2188,6 +2209,427 @@ body .new-detail .slider-new .slider-new-wrapper .slick-prev {
     padding: 5px 8px;
     font-size: 16px;
     border-radius: 10px; }
+body .senrena-resroom {
+  margin: 100px auto; }
+  body .senrena-resroom h3 {
+    font-size: 40px;
+    font-family: Montserrat-Bold, sans-serif;
+    color: #1F1E1C;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0; }
+  body .senrena-resroom p {
+    font-size: 16px;
+    font-family: Montserrat-Medium, sans-serif;
+    color: #1F1E1C;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center; }
+  body .senrena-resroom .senrena-resroom-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; }
+    body .senrena-resroom .senrena-resroom-list .senrena-resroom-child {
+      box-shadow: 4px 6px 10px 0px #0000000F;
+      border-radius: 5px;
+      overflow: hidden; }
+      body .senrena-resroom .senrena-resroom-list .senrena-resroom-child:hover .senrena-resroom-child-text {
+        background: rgba(207, 148, 0, 0.1); }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child:hover .senrena-resroom-child-text a button {
+          background: #CF9400;
+          color: #fff;
+          border: none; }
+      body .senrena-resroom .senrena-resroom-list .senrena-resroom-child picture {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        padding-top: calc(0.695652 * 100%);
+        border-radius: 5px; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child picture img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          object-fit: cover; }
+      body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text {
+        padding: 30px 25px;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text h5 {
+          font-size: 24px;
+          color: #1A3D36;
+          font-family: Montserrat-Bold, sans-serif;
+          margin: 0; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text p {
+          width: 100%;
+          text-align: left;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
+          -moz-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          display: -webkit-box; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text .senrena-resroom-info {
+          display: flex;
+          text-align: center;
+          gap: 20px;
+          margin-bottom: 15px; }
+          body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text .senrena-resroom-info picture {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: 24px;
+            height: 24px;
+            padding-top: unset; }
+            body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text .senrena-resroom-info picture img {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text .senrena-resroom-info p {
+            margin: 0;
+            color: #1A3D36; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text a {
+          text-decoration: none; }
+          body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text a button {
+            margin-top: 40px;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #1A3D36;
+            background: none;
+            border: 1px solid #1A3D36;
+            border-radius: 5px;
+            padding: 12px 53px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; }
+body .slider-resroom {
+  overflow: hidden;
+  margin: 0; }
+  body .slider-resroom .slider-resroom-child {
+    position: relative;
+    margin: 0 10px;
+    max-width: 846px;
+    width: 100%;
+    height: 100%; }
+    body .slider-resroom .slider-resroom-child::before {
+      position: absolute;
+      content: "";
+      background-color: #000000B2;
+      border-radius: 5px;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 23%;
+      z-index: 1; }
+    body .slider-resroom .slider-resroom-child picture {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      border-radius: 5px;
+      width: 100%;
+      height: 0;
+      padding-top: calc(0.670212 * 100%); }
+      body .slider-resroom .slider-resroom-child picture img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    body .slider-resroom .slider-resroom-child h5 {
+      position: absolute;
+      bottom: 50px;
+      color: #fff;
+      font-size: 24px;
+      font-family: Montserrat-Bold, sans-serif;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      margin: 0; }
+body .endow-confer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px; }
+  body .endow-confer .endow-confer-child {
+    position: relative;
+    border-radius: 5px;
+    min-width: 400px; }
+    body .endow-confer .endow-confer-child img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      border-radius: 5px; }
+    body .endow-confer .endow-confer-child .endow-confer-title {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 25%;
+      background: rgba(0, 0, 0, 0.6);
+      bottom: 0;
+      border-radius: 5px;
+      z-index: 1;
+      display: flex;
+      align-items: center; }
+      body .endow-confer .endow-confer-child .endow-confer-title h5 {
+        font-size: 24px;
+        line-height: 24px;
+        font-family: Montserrat-Bold, sans-serif;
+        color: #fff;
+        width: 100%;
+        text-transform: uppercase; }
+body .contact {
+  color: #1A3D36;
+  padding-top: 40px;
+  text-align: left; }
+  body .contact .contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 150px; }
+    body .contact .contact-info .contact-info-child {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      max-width: 400px; }
+      body .contact .contact-info .contact-info-child p {
+        font-family: Montserrat-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 2px;
+        margin: 0; }
+      body .contact .contact-info .contact-info-child h6 {
+        font-family: Montserrat-Medium, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0; }
+  body .contact .contact-us {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    body .contact .contact-us .contact-us-form {
+      padding-right: 10px; }
+      body .contact .contact-us .contact-us-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; }
+        body .contact .contact-us .contact-us-form form input, body .contact .contact-us .contact-us-form form textarea {
+          padding: 23px 53px 23px 25px;
+          background: #F3F5F5;
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
+          border-radius: 5px;
+          border: none;
+          font-family: Montserrat-Regular, sans-serif;
+          font-size: 18px;
+          line-height: 24px; }
+          body .contact .contact-us .contact-us-form form input:focus-visible, body .contact .contact-us .contact-us-form form textarea:focus-visible {
+            outline-color: #CF9400; }
+        body .contact .contact-us .contact-us-form form textarea {
+          resize: none; }
+        body .contact .contact-us .contact-us-form form button {
+          margin-top: 27px;
+          width: 198px;
+          height: 48px;
+          border: none;
+          background-color: #CF9400;
+          color: #fff;
+          font-size: 14px;
+          font-family: Montserrat-Bold, sans-serif;
+          text-transform: uppercase;
+          padding: 0 55px;
+          flex: none;
+          border-radius: 5px; }
+    body .contact .contact-us .contact-us-address {
+      padding-left: 10px; }
+body .room .room-detail {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 40% 60%; }
+  body .room .room-detail .room-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    body .room .room-detail .room-content h4 {
+      font-size: 40px;
+      font-family: Montserrat-Bold, sans-serif;
+      color: #1F1E1C;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 20px; }
+    body .room .room-detail .room-content p {
+      font-size: 16px;
+      font-family: Montserrat-Regular, sans-serif;
+      color: #1F1E1C;
+      margin-bottom: 15px;
+      width: 80%; }
+    body .room .room-detail .room-content h5 {
+      font-family: Montserrat-Bold, sans-serif;
+      font-size: 32px;
+      line-height: 39px;
+      text-transform: uppercase;
+      color: #CF9400;
+      margin-bottom: 45px; }
+    body .room .room-detail .room-content a {
+      color: #CF9400;
+      text-decoration: none;
+      border: 1px solid #CF9400;
+      border-radius: 5px;
+      text-transform: uppercase;
+      padding: 15px 37px;
+      font-size: 16px;
+      font-family: Montserrat-Bold, sans-serif;
+      width: fit-content; }
+  body .room .room-detail .room-imgs {
+    position: relative;
+    padding-left: 40px; }
+    body .room .room-detail .room-imgs .slider-room {
+      height: 100%; }
+      body .room .room-detail .room-imgs .slider-room .slider-room-wrapper picture {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding-top: calc(0.7 * 100%); }
+        body .room .room-detail .room-imgs .slider-room .slider-room-wrapper picture img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          object-fit: cover;
+          width: 100%;
+          height: 100%; }
+      body .room .room-detail .room-imgs .slider-room .slick-dots {
+        bottom: 10%;
+        text-align: left;
+        padding-left: 10%; }
+        body .room .room-detail .room-imgs .slider-room .slick-dots li {
+          width: 6px;
+          height: 6px; }
+          body .room .room-detail .room-imgs .slider-room .slick-dots li:hover button::before {
+            background: #CF9400; }
+          body .room .room-detail .room-imgs .slider-room .slick-dots li button {
+            width: 6px;
+            height: 6px;
+            color: #D9D9D9; }
+            body .room .room-detail .room-imgs .slider-room .slick-dots li button::before {
+              width: 6px;
+              height: 6px;
+              content: "";
+              background: #D9D9D9;
+              border-radius: 50%;
+              opacity: 1;
+              color: #D9D9D9; }
+        body .room .room-detail .room-imgs .slider-room .slick-dots .slick-active {
+          width: 26px; }
+          body .room .room-detail .room-imgs .slider-room .slick-dots .slick-active button {
+            width: 26px; }
+            body .room .room-detail .room-imgs .slider-room .slick-dots .slick-active button::before {
+              opacity: 1;
+              color: #CF9400;
+              background-color: #CF9400;
+              border-radius: 6px;
+              width: 26px; }
+body .room .room-info .information-all h4 {
+  margin-bottom: 20px; }
+body .room .room-info .information-all p {
+  line-height: 28px; }
+body .room .room-info .room-ulti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 110px; }
+  body .room .room-info .room-ulti .room-ulti-card {
+    background: rgba(207, 148, 0, 0.1);
+    border-radius: 5px;
+    padding: 100px 80px 65px;
+    text-align: left; }
+    body .room .room-info .room-ulti .room-ulti-card h5 {
+      margin: 0;
+      font-size: 24px;
+      font-family: Montserrat-Bold, sans-serif;
+      color: #1F1E1C; }
+    body .room .room-info .room-ulti .room-ulti-card ul {
+      list-style: none;
+      margin-top: 40px; }
+      body .room .room-info .room-ulti .room-ulti-card ul li {
+        font-size: 16px;
+        color: #1F1E1C;
+        font-family: Montserrat-Medium, sans-serif;
+        margin-bottom: 20px; }
+body .room .room-price {
+  text-align: center;
+  width: 100%; }
+  body .room .room-price table {
+    width: 100%;
+    border-spacing: 0; }
+  body .room .room-price table, body .room .room-price tr, body .room .room-price th, body .room .room-price td {
+    border: 1px solid rgba(109, 110, 113, 0.5); }
+body .room .heading-4 h4 {
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #393833;
+  font-family: Montserrat-Bold, sans-serif; }
+body .library-content {
+  margin-top: 100px; }
+  body .library-content h3 {
+    margin: 0;
+    font-size: 32px;
+    font-family: Montserrat-Bold, sans-serif;
+    color: #1F1E1C; }
+  body .library-content ul {
+    margin: 20px 0;
+    display: flex;
+    gap: 50px;
+    list-style: none; }
+    body .library-content ul li:hover a {
+      color: #CF9400; }
+    body .library-content ul li a {
+      font-size: 18px;
+      color: #1B1717;
+      font-family: Montserrat-SemiBold, sans-serif;
+      text-decoration: none; }
+  body .library-content .grid-wrapper {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    grid-auto-rows: 228px;
+    grid-auto-flow: dense; }
+    body .library-content .grid-wrapper .library-image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .library-content .grid-wrapper .library-image img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        vertical-align: middle;
+        display: inline-block; }
+    body .library-content .grid-wrapper .height-2 {
+      grid-row: span 2; }
+    body .library-content .grid-wrapper .height-3 {
+      grid-row: span 3; }
+    body .library-content .grid-wrapper .height-4 {
+      grid-row: span 4; }
+    body .library-content .grid-wrapper .width-2 {
+      grid-column: span 2; }
 body .subscribe-information {
   text-align: center;
   margin: 60px auto; }
@@ -2413,7 +2855,13 @@ body footer {
     body .new .new-wrapper {
       margin: 40px 0; }
       body .new .new-wrapper .new-left .new-main .text-new-main a h4 {
-        font-size: 22px; } }
+        font-size: 22px; }
+  body .senrena-resroom {
+    margin: 80px auto; }
+    body .senrena-resroom h3 {
+      font-size: 34px; }
+  body .slider-resroom .slider-resroom-child {
+    max-width: 660px; } }
 @media only screen and (max-width: 1240px) {
   body .menu ul li .menu-dropdown {
     left: -97px; }
@@ -2631,6 +3079,46 @@ body footer {
         body .new .new-wrapper .new-right .new-hot .new-hot-child picture {
           width: 90px;
           height: 90px; }
+  body .senrena-resroom h3 {
+    font-size: 30px; }
+  body .senrena-resroom p {
+    width: 90%; }
+  body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text h5 {
+    font-size: 20px; }
+  body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text p {
+    margin: 10px auto; }
+  body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text a button {
+    margin-top: 30px; }
+  body .slider-resroom .slider-resroom-child {
+    max-width: 500px; }
+    body .slider-resroom .slider-resroom-child h5 {
+      bottom: 30px;
+      font-size: 20px; }
+  body .contact .contact-info {
+    gap: 0;
+    justify-content: space-between; }
+  body .room .room-detail .room-content h4 {
+    font-size: 24px; }
+  body .room .room-detail .room-content p {
+    font-size: 14px; }
+  body .room .room-detail .room-content h5 {
+    font-size: 22px;
+    margin-bottom: 25px; }
+  body .room .room-info .room-ulti .room-ulti-card {
+    padding: 60px 30px 30px; }
+    body .room .room-info .room-ulti .room-ulti-card h5 {
+      font-size: 18px; }
+    body .room .room-info .room-ulti .room-ulti-card ul {
+      margin-top: 30px; }
+      body .room .room-info .room-ulti .room-ulti-card ul li {
+        font-size: 14px;
+        margin-bottom: 10px; }
+  body .room .heading-4 h4 {
+    font-size: 24px; }
+  body .room .room-price {
+    text-align: center; }
+    body .room .room-price p {
+      font-size: 14px; }
   body .subscribe-information h4 {
     font-size: 24px; }
   body .subscribe-information .form-subscribe-information form {
@@ -2642,6 +3130,134 @@ body footer {
   body footer .footer-wrapper .footer-right .office p {
     padding: 0; } }
 @media only screen and (max-width: 991px) {
+  body header {
+    border: none; }
+    body header .header-top .header-top-left, body header .header-top .header-top-right {
+      display: none; }
+    body header .header-top .btn-nav {
+      display: block;
+      order: 2; }
+  body .menu {
+    display: none; }
+  body .menu-mobie {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    padding: 65px 20px 0;
+    transform: translateX(100%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: block; }
+    body .menu-mobie .contact-mobie {
+      display: flex;
+      justify-content: space-between; }
+      body .menu-mobie .contact-mobie .phone-number {
+        display: flex;
+        gap: 10px;
+        align-items: center; }
+        body .menu-mobie .contact-mobie .phone-number span {
+          font-family: Montserrat-Medium, sans-serif;
+          color: #1A3D36; }
+      body .menu-mobie .contact-mobie .book-room a {
+        text-decoration: none;
+        background: #CF9400;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-size: 14px; }
+    body .menu-mobie .search-mobie {
+      background: rgba(5, 29, 54, 0.05);
+      margin: 30px 0;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      border-radius: 5px; }
+      body .menu-mobie .search-mobie input {
+        width: 100%;
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 14px;
+        color: #1A3D36;
+        font-family: Montserrat-Regular, sans-serif; }
+    body .menu-mobie .menu-mobie-list {
+      border-bottom: 2px solid #D9D9D9; }
+      body .menu-mobie .menu-mobie-list ul {
+        list-style: none; }
+        body .menu-mobie .menu-mobie-list ul li {
+          width: 100%;
+          position: relative;
+          padding: 10px 0; }
+          body .menu-mobie .menu-mobie-list ul li:hover .menu-dropdown {
+            display: block; }
+            body .menu-mobie .menu-mobie-list ul li:hover .menu-dropdown li:hover a {
+              color: #CF9400; }
+          body .menu-mobie .menu-mobie-list ul li:hover a {
+            color: #CF9400; }
+          body .menu-mobie .menu-mobie-list ul li:nth-child(2)::before {
+            content: "";
+            font-family: Font-Awesome;
+            font-size: 16px;
+            right: 0;
+            position: absolute; }
+          body .menu-mobie .menu-mobie-list ul li:nth-last-child(1)::before {
+            content: "";
+            font-family: Font-Awesome;
+            font-size: 16px;
+            right: 0;
+            position: absolute; }
+          body .menu-mobie .menu-mobie-list ul li .menu-dropdown {
+            display: none;
+            margin-left: 30px; }
+            body .menu-mobie .menu-mobie-list ul li .menu-dropdown li:nth-child(2)::before {
+              display: none; }
+            body .menu-mobie .menu-mobie-list ul li .menu-dropdown li:nth-last-child(1)::before {
+              display: none; }
+            body .menu-mobie .menu-mobie-list ul li .menu-dropdown li a {
+              font-size: 16px;
+              font-family: Montserrat-Regular, sans-serif;
+              color: #1A3D36; }
+          body .menu-mobie .menu-mobie-list ul li a {
+            font-size: 16px;
+            font-family: Montserrat-Regular, sans-serif;
+            color: #1A3D36; }
+    body .menu-mobie .language-mobie {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px; }
+      body .menu-mobie .language-mobie span {
+        font-size: 16px;
+        font-family: Montserrat-Regular, sans-serif;
+        color: #1A3D36; }
+        body .menu-mobie .language-mobie span:nth-child(1) {
+          position: relative;
+          padding-right: 30px; }
+          body .menu-mobie .language-mobie span:nth-child(1)::before {
+            content: "";
+            font-family: Font-Awesome;
+            font-size: 16px;
+            right: 0;
+            position: absolute; }
+      body .menu-mobie .language-mobie .language-list-mobie {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        margin-top: 10px; }
+        body .menu-mobie .language-mobie .language-list-mobie span::before {
+          display: none; }
+      body .menu-mobie .language-mobie .show-language {
+        display: flex; }
+    body .menu-mobie .close-menu-mobie {
+      position: absolute;
+      top: 20px; }
+  body .active {
+    transform: translateX(0); }
   body .banner .check-room {
     position: unset;
     bottom: unset;
@@ -2924,6 +3540,61 @@ body footer {
     left: -30px; }
   body .new-detail .slider-new .slider-new-wrapper .slick-next {
     right: 0; }
+  body .senrena-resroom {
+    margin: 60px auto; }
+    body .senrena-resroom h3 {
+      font-size: 24px; }
+    body .senrena-resroom .senrena-resroom-list {
+      grid-template-columns: repeat(2, 1fr); }
+  body .slider-resroom .slider-resroom-child {
+    max-width: 400px; }
+    body .slider-resroom .slider-resroom-child h5 {
+      bottom: 20px;
+      font-size: 18px; }
+  body .endow-confer {
+    grid-template-columns: auto; }
+  body .contact .contact-info {
+    flex-direction: column;
+    gap: 15px; }
+    body .contact .contact-info .contact-info-child {
+      max-width: none; }
+      body .contact .contact-info .contact-info-child p, body .contact .contact-info .contact-info-child h6 {
+        font-size: 14px; }
+  body .contact .contact-us {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 100%; }
+    body .contact .contact-us .contact-us-form {
+      padding-right: 0;
+      padding-bottom: 40px; }
+      body .contact .contact-us .contact-us-form form input, body .contact .contact-us .contact-us-form form textarea {
+        padding: 13px 53px 13px 25px;
+        font-size: 14px;
+        line-height: 20px; }
+      body .contact .contact-us .contact-us-form form button {
+        margin-top: 10px; }
+    body .contact .contact-us .contact-us-address {
+      padding: 0; }
+  body .room .room-detail {
+    display: block; }
+    body .room .room-detail .room-content {
+      align-items: center;
+      text-align: center; }
+      body .room .room-detail .room-content h4 {
+        font-size: 24px; }
+      body .room .room-detail .room-content p {
+        font-size: 14px; }
+      body .room .room-detail .room-content h5 {
+        font-size: 22px;
+        margin-bottom: 25px; }
+    body .room .room-detail .room-imgs {
+      padding-top: 20px;
+      padding-left: 0; }
+  body .room .room-info .room-ulti {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 60px; }
+    body .room .room-info .room-ulti .room-ulti-card {
+      padding: 30px; }
   body .subscribe-information {
     margin: 40px auto; }
     body .subscribe-information h4 {
@@ -2941,6 +3612,8 @@ body footer {
   body footer .footer-wrapper .footer-mid {
     padding: 50px 0; } }
 @media only screen and (max-width: 480px) {
+  body header .header-top .logo picture img {
+    max-width: 100px; }
   body .banner .check-room {
     width: 100%; }
     body .banner .check-room form {
@@ -2989,7 +3662,8 @@ body footer {
       body .our-story .our-story-text h4 {
         font-size: 24px; }
       body .our-story .our-story-text p {
-        font-size: 14px; }
+        font-size: 14px;
+        margin-bottom: 25px; }
       body .our-story .our-story-text a {
         font-size: 12px;
         padding: 10px 20px; }
@@ -3364,6 +4038,28 @@ body footer {
     transform: unset; }
     body .new-detail .slider-new .slider-new-wrapper .slick-prev::before {
       font-size: 10px; }
+  body .senrena-resroom {
+    margin: 40px auto; }
+    body .senrena-resroom h3 {
+      font-size: 20px; }
+    body .senrena-resroom p {
+      width: 100%;
+      font-size: 14px;
+      margin: 10px auto; }
+    body .senrena-resroom .senrena-resroom-list {
+      grid-template-columns: repeat(1, 1fr); }
+      body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text {
+        padding: 20px 25px; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text h5 {
+          font-size: 16px; }
+        body .senrena-resroom .senrena-resroom-list .senrena-resroom-child .senrena-resroom-child-text a button {
+          margin-top: 10px;
+          font-size: 14px; }
+  body .slider-resroom .slider-resroom-child {
+    max-width: 220px; }
+    body .slider-resroom .slider-resroom-child h5 {
+      bottom: 10px;
+      font-size: 14px; }
   body .service {
     margin: 40px auto; }
     body .service .skin-care {
@@ -3397,6 +4093,16 @@ body footer {
       body .service .other-services .slider-services .services-child h5 {
         bottom: 20px;
         font-size: 14px; }
+  body .room .room-info .room-ulti {
+    grid-template-columns: repeat(1, 1fr); }
+    body .room .room-info .room-ulti .room-ulti-card {
+      text-align: center;
+      padding: 20px 0 20px 10px; }
+      body .room .room-info .room-ulti .room-ulti-card ul {
+        margin-top: 30px; }
+        body .room .room-info .room-ulti .room-ulti-card ul li {
+          font-size: 14px;
+          margin-bottom: 10px; }
   body footer .footer-wrapper {
     flex-wrap: wrap; }
     body footer .footer-wrapper h4 {
