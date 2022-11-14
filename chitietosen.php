@@ -1,5 +1,5 @@
 <?php include './header.php' ?>
-<div class="banner">
+<div class="banner wow fadeInDown"data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
     <div class="slider-banner child">
         <div class="slider-banner-wrapper">
             <picture>
@@ -26,12 +26,12 @@
 <div class="osen-detail">
     <div class="container">
         <div class="osen-detali-wrapper">
-            <div class="osen-detali-text">
+            <div class="osen-detali-text wow fadeInLeft">
                 <h4>KHU ONSEN KIỂU NHẬT</h4>
                 <p>Đến với Serena Resort Kim Bôi Hòa Bình, du khách không thể bỏ qua dịch vụ tắm khoáng Onsen kiểu Nhật. Khu tắm Onsen kiểu Nhật mang lối kiến trúc của đất nước mặt trời mọc, là sự kết hợp giữa xông hơi bằng chính nguồn khoáng nóng tại Kim Bôi và bể tắm khoáng ngoài trời nằm trọn trong thiên nhiên tươi mát.</p>
                 <a href="#">Đặt NGAY</a>
             </div>
-            <div class="osen-detali-img">
+            <div class="osen-detali-img wow fadeInRight">
                 <picture>
                     <img src="./dist/img/img 3.png" alt="">
                 </picture>

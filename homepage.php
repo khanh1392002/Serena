@@ -1,9 +1,9 @@
 <?php include './header.php' ?>
 <div class="banner">
-    <picture>
+    <picture class="wow fadeInDown " data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
         <img src="./dist/img/img 2.png" alt="">
     </picture>
-        <div class="check-room">
+        <div class="check-room wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
             <form action="">
                 <div class="form-check-room">
                     <h5>ĐẶT PHÒNG</h5>
@@ -33,13 +33,13 @@
 </div>
 <div class="container">
     <div class="our-story"> 
-        <div class="our-story-text ">
+        <div class="our-story-text wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
             <h5>Our Story</h5>
             <h4>Serena Resort</h4>
             <p>Serena Resort Kim Bôi là một thế giới hoàn toàn khác với không khí trong lành, thiên nhiên hoang sơ, núi non, sông nước hài hòa. Nằm kề dòng sông Bôi, Serena Resort là khu nghỉ dưỡng độc đáo tại Kim Bôi với khung cảnh tuyệt đẹp của cánh đồng lúa được nuôi dưỡng bởi dòng sông hiền hòa, uốn mình ôm lấy những dãy núi phủ màu xanh ngắt. </p>
             <a href="#">tìm hiểu thêm</a>
         </div>
-        <div class="our-story-img ">
+        <div class="our-story-img wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
             <picture>
                 <img src="./dist/img/img 3.png" alt="">
             </picture>
@@ -49,11 +49,11 @@
         </div>
     </div>
 </div>
-<div class="room-package">
+<div class="room-package ">
     <div class="container">
-        <h5>Room and Package</h5>
-        <h3>Ưu đãi độc quyền</h3>
-        <div class="list-room">
+        <h5 class="wow fadeInDown">Room and Package</h5>
+        <h3 class="wow fadeInDown"data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">Ưu đãi độc quyền</h3>
+        <div class="list-room wow fadeInDown"data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
             <div class="list-room-child">
                 <picture>
                     <img src="./dist/img/img 5.png" alt="">
@@ -86,11 +86,11 @@
         </div> 
         <div class="villa">
                 <div class="villa-child">
-                    <picture>
+                    <picture class="wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
                         <img src="./dist/img/img 7.png" alt="">
                     </picture>
-                    <div class="villa-child-wrapper">
-                        <div class="villa-child-text">
+                    <div class="villa-child-wrapper wow fadeInRight">
+                        <div class="villa-child-text" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
                             <h4>Khu Onsen kiểu Nhật</h4>
                             <p>Serena Resort Kim Bôi là một thế giới hoàn toàn khác với không khí trong lành, thiên nhiên hoang sơ, núi non, sông nước hài hòa. Nằm kề dòng sông Bôi, Serena Resort là khu nghỉ dưỡng độc đáo tại Kim Bôi với khung cảnh tuyệt đẹp của cánh đồng lúa được nuôi dưỡng bởi dòng sông hiền hòa, uốn mình ôm lấy những dãy núi phủ màu xanh ngắt. </p>
                             <a href="#">Xem thêm</a>
@@ -98,27 +98,27 @@
                     </div>
                 </div>
                 <div class="villa-child">
-                    <div class="villa-child-wrapper">
+                    <div class="villa-child-wrapper wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
                         <div class="villa-child-text">
                             <h4>Khu Onsen kiểu Nhật</h4>
                             <p>Serena Resort Kim Bôi là một thế giới hoàn toàn khác với không khí trong lành, thiên nhiên hoang sơ, núi non, sông nước hài hòa. Nằm kề dòng sông Bôi, Serena Resort là khu nghỉ dưỡng độc đáo tại Kim Bôi với khung cảnh tuyệt đẹp của cánh đồng lúa được nuôi dưỡng bởi dòng sông hiền hòa, uốn mình ôm lấy những dãy núi phủ màu xanh ngắt. </p>
                             <a href="#">Xem thêm</a>
                         </div>
                     </div>
-                    <picture>
+                    <picture class="wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
                         <img src="./dist/img/img 8.png" alt="">
                     </picture>
                 </div>
             </div>
         </div>
-    </div>
-<div class="overview">
+    </div> 
+<div class="overview wow fadeInDown">
     <picture>
         <img src="./dist/img/img 9.png" alt="">
     </picture>
     <div class="overview-text">
-        <h5>Overview</h5>
-        <h3>Bản đồ Serena Resort</h3>
+        <h5 class="wow fadeInDown" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">Overview</h5>
+        <h3 class="wow fadeInDown" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">Bản đồ Serena Resort</h3>
     </div>
 </div>
 <?php include './footer.php' ?>

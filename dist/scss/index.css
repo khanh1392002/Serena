@@ -2861,7 +2861,11 @@ body footer {
     body .senrena-resroom h3 {
       font-size: 34px; }
   body .slider-resroom .slider-resroom-child {
-    max-width: 660px; } }
+    max-width: 660px; }
+  body .library-content {
+    margin-top: 80px; }
+    body .library-content h3 {
+      font-size: 26px; } }
 @media only screen and (max-width: 1240px) {
   body .menu ul li .menu-dropdown {
     left: -97px; }
@@ -3119,6 +3123,10 @@ body footer {
     text-align: center; }
     body .room .room-price p {
       font-size: 14px; }
+  body .library-content {
+    margin-top: 60px; }
+    body .library-content h3 {
+      font-size: 22px; }
   body .subscribe-information h4 {
     font-size: 24px; }
   body .subscribe-information .form-subscribe-information form {
@@ -3595,6 +3603,12 @@ body footer {
     margin-bottom: 60px; }
     body .room .room-info .room-ulti .room-ulti-card {
       padding: 30px; }
+  body .library-content h3 {
+    font-size: 20px; }
+  body .library-content ul {
+    gap: 40px; }
+    body .library-content ul li a {
+      font-size: 16px; }
   body .subscribe-information {
     margin: 40px auto; }
     body .subscribe-information h4 {
@@ -4103,6 +4117,11 @@ body footer {
         body .room .room-info .room-ulti .room-ulti-card ul li {
           font-size: 14px;
           margin-bottom: 10px; }
+  body .library-content {
+    margin-top: 40px;
+    overflow: hidden; }
+    body .library-content h3 {
+      font-size: 18px; }
   body footer .footer-wrapper {
     flex-wrap: wrap; }
     body footer .footer-wrapper h4 {

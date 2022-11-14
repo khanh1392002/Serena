@@ -1,5 +1,5 @@
 <?php include './header.php' ?>
-<div class="banner">
+<div class="banner wow fadeInDown"data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
     <div class="slider-banner child">
         <div class="slider-banner-wrapper">
             <picture>
@@ -24,10 +24,10 @@
     </div>
 </div>
 <div class="container">
-    <div class="onsen">
-        <h3>Khoáng nóng</h3>
-        <p>Hiệu quả của suối khoáng trong việc chăm sóc sức khỏe, sắc đẹp và chữa bệnh đã được thế giới công nhận và biết đến từ lâu. Nước suối khoáng Kim Bôi ngâm mình có tác dụng làm mịn, trắng da, giúp điều trị một số bệnh như viêm khớp, huyết áp,… Cho đến nay, tắm khoáng nóng vẫn là loại hình du lịch độc đáo được du khách trong nước cũng như quốc tế yêu thích.</p>
-        <div class="onsen-wrappe">
+    <div class="onsen ">
+        <h3 class="wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">Khoáng nóng</h3>
+        <p class="wow fadeInDown" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">Hiệu quả của suối khoáng trong việc chăm sóc sức khỏe, sắc đẹp và chữa bệnh đã được thế giới công nhận và biết đến từ lâu. Nước suối khoáng Kim Bôi ngâm mình có tác dụng làm mịn, trắng da, giúp điều trị một số bệnh như viêm khớp, huyết áp,… Cho đến nay, tắm khoáng nóng vẫn là loại hình du lịch độc đáo được du khách trong nước cũng như quốc tế yêu thích.</p>
+        <div class="onsen-wrappe wow fadeInDown" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
             <div class="onsen-child">
                 <picture>
                     <img src="./dist/img/img 15.png" alt="">
@@ -51,9 +51,9 @@
         </div>
     </div>
     <div class="spa">
-        <h3>DỊCH VỤ SPA</h3>
-        <p>Serena Resort Kim Bôi là một thế giới hoàn toàn khác với không khí trong lành, thiên nhiên hoang sơ, núi non, sông nước hài hòa.  Nằm kề dòng sông Bôi, Serena Resort là khu nghỉ dưỡng </p>
-        <div class="spa-wrapper">
+        <h3 class="wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">DỊCH VỤ SPA</h3>
+        <p class="wow fadeInDown" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">Serena Resort Kim Bôi là một thế giới hoàn toàn khác với không khí trong lành, thiên nhiên hoang sơ, núi non, sông nước hài hòa.  Nằm kề dòng sông Bôi, Serena Resort là khu nghỉ dưỡng </p>
+        <div class="spa-wrapper wow fadeInDown" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
             <div class="spa-child">
                 <div class="spa-text">
                     <a href="#">

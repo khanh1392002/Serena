@@ -1,7 +1,7 @@
     <div class="container">
         <div class="subscribe-information">
-            <h4>Đăng ký nhận thông tin và ưu đãi mới</h4>
-            <div class="form-subscribe-information">
+            <h4 class="wow fadeInDown"data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;" >Đăng ký nhận thông tin và ưu đãi mới</h4>
+            <div class="form-subscribe-information wow fadeInDown" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
                 <form action="">
                     <div class="form-input">
                         <picture>
@@ -16,7 +16,7 @@
     </div>
     <footer>
         <div class="container">
-            <div class="footer-wrapper">
+            <div class="footer-wrapper wow fadeInDown"data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
                 <div class="footer-left col-lg-4 col-xs-6">
                     <h4>Giới thiệu</h4>
                     <ul>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./dist/lightgallery/css/lightgallery.min.css">
     <link rel="stylesheet" href="./dist/lightgallery/css/lg-fullscreen.min.css">
     <link rel="stylesheet" href="./dist/lightgallery/css/lg-thumbnail.min.css">
+    <link rel="stylesheet" href="./dist/js/animate/animate.css">
     <script src="./dist/js/jquery-3.6.0.js"></script>
     <script src="./dist/js/jquery-ui.js"></script>
     <script src="./dist/js/jquery.fancybox.min.js"></script>
@@ -22,6 +23,7 @@
     <script src="./dist/lightgallery/js/lightgallery.min.js"></script>
     <script src="./dist/lightgallery/js/lg-fullscreen.min.js"></script>
     <script src="./dist/lightgallery/js/lg-thumbnail.min.js"></script>
+    <script src="./dist/js/animate/wow.js"></script>
 </head>
 <body>  
     <header>
@@ -72,7 +74,7 @@
         </div>
     </header>
     <div class="container">
-        <div class="menu">
+        <div class="menu wow fadeInDown">
             <ul>
                 <li><a href="#">Ưu đãi</a></li>
                 <li><a href="#">Phòng nghỉ</a>
