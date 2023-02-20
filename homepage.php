@@ -112,7 +112,7 @@
             </div>
         </div>
     </div> 
-<div class="overview wow fadeInDown">
+<div class="overview wow fadeInRight">
     <picture>
         <img src="./dist/img/img 9.png" alt="">
     </picture>

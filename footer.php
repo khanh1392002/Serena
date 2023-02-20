@@ -1,71 +1,97 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package underscores
+ */
+
+$footer_form_title = get_field('footer_form_title', 'option');
+$footer_form_shortcode = get_field('footer_form_shortcode', 'option');
+
+$footer_content_1_title = get_field('footer_content_1_title', 'option');
+$footer_content_1 = get_field('footer_content_1', 'option');
+$footer_logo = get_field('footer_logo', 'option');
+$footer_content_2 = get_field('footer_content_2', 'option');
+$footer_content_3_title = get_field('footer_content_3_title', 'option');
+$footer_content_3 = get_field('footer_content_3', 'option');
+?>
+    <div class="backtotop"></div>
+    <div class="mess">
+        <picture>
+            <a target="_blank" href="http://m.me/serenaresortkimboi"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/mess.svg" alt="messenger"></a>
+        </picture>
+    </div>
     <div class="container">
         <div class="subscribe-information">
-            <h4 class="wow fadeInDown"data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;" >Đăng ký nhận thông tin và ưu đãi mới</h4>
-            <div class="form-subscribe-information wow fadeInDown" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-                <form action="">
-                    <div class="form-input">
-                        <picture>
-                            <img src="./dist/img/mail.svg" alt="">
-                        </picture>
-                        <input type="text" placeholder="Nhập email của bạn">
-                    </div>
-                    <button>Đăng ký ngay</button>
-                </form>
+            <?php if ( $footer_form_title ) { ?><h4><?php echo $footer_form_title; ?></h4><?php } ?>
+            <div class="form-subscribe-information">
+                <?php if ( $footer_form_shortcode ) { echo apply_shortcodes( $footer_form_shortcode ); } ?>
             </div>
         </div>
     </div>
     <footer>
         <div class="container">
-            <div class="footer-wrapper wow fadeInDown"data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+            <div class="footer-wrapper">
                 <div class="footer-left col-lg-4 col-xs-6">
-                    <h4>Giới thiệu</h4>
-                    <ul>
-                        <li><a href="#">Về chúng tôi</a></li>
-                        <li><a href="#">Hội thảo</a></li>
-                        <li><a href="#">Ưu đãi</a></li>
-                        <li><a href="#">Giải trí</a></li>
-                        <li><a href="#">Phòng nghỉ</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Nhà hàng</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Khoáng nóng</a></li>
-                    </ul>
+                    <?php if ( $footer_content_1_title ) { ?><h4><?php echo $footer_content_1_title; ?></h4><?php } ?>
+                    <?php if ( $footer_content_1 ) { echo $footer_content_1; } ?>
                 </div>
                 <div class="footer-mid col-lg-4 ">
-                    <picture>
-                        <img src="./dist/img/Logo.png" alt="">
-                    </picture>
+                    <?php if ( $footer_logo ) { ?>
+                        <a class="logo-footer" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                            <picture>
+                                <img src="<?php echo $footer_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+                            </picture>
+                        </a>
+                    <?php } ?>
                     <div class="location">
-                        <p>Xóm Khai Đồi, xã Sào Báy, huyện Kim Bôi, tỉnh Hòa Bình</p>
-                        <h5>Liên hệ</h5>
-                        <h4>0218 625 6666</h4>
-                        <p>info.srh@serena.com.vn</p>
+                        <?php if ( $footer_content_2 ) { echo $footer_content_2; } ?>
                     </div>
-                    <div class="network">
-                        <picture>
-                            <img src="./dist/img/facebook.svg" alt="">
-                        </picture>
-                        <picture>
-                            <img src="./dist/img/youtube.svg" alt="">
-                        </picture>
-                        <picture>
-                            <img src="./dist/img/twitter.svg" alt="">
-                        </picture>
-                    </div>
+                    <?php if( have_rows('footer_socials_setting', 'option') ): ?>
+                        <div class="network">
+                            <?php 
+                            while( have_rows('footer_socials_setting', 'option') ): the_row(); 
+                            $footer_social_icon = get_sub_field('footer_social_icon');
+                            $footer_social_title = get_sub_field('footer_social_title') ?: 'social icon';
+                            $footer_social_link = get_sub_field('footer_social_link') ?: '#';
+                            ?>
+                                <?php if ( $footer_social_icon ) { ?>
+                                    <a target="_blank" href="<?php echo $footer_social_link; ?>">
+                                        <picture>
+                                            <img src="<?php echo $footer_social_icon; ?>" alt="<?php echo $footer_social_title; ?>" />
+                                        </picture>
+                                    </a>
+                                <?php } ?>
+                            <?php endwhile; ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="footer-right col-lg-4 col-xs-6">
-                    <h4>Liên hệ</h4>
+                    <?php if ( $footer_content_3_title ) { ?><h4><?php echo $footer_content_3_title; ?></h4><?php } ?>
                     <div class="office">
-                        <h5>Văn phòng đại diện tại Hà Nội</h5>
-                        <h5>CÔNG TY CỔ PHẦN SUN HOSPITALITY GROUP</h5>
-                        <p>Tòa nhà Sun Grand City Ancora Residence,Số 03 Lương Yên, Quận Hai Bà Trưng,Thành phố Hà Nội</p>
-                        <picture>
-                            <img src="./dist/img/img 1.png" alt="">
-                        </picture>
+                        <?php if ( $footer_content_3 ) { echo $footer_content_3; } ?>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/js/jquery-3.6.0.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/js/jquery-ui.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/js/jquery.fancybox.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/js/main.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/js/slick.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/lightgallery/js/lightgallery.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/lightgallery/js/lg-fullscreen.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/lightgallery/js/lg-thumbnail.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/dist/js/animate/wow.js"></script>
+
 </body>
 </html>
